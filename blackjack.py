@@ -1,4 +1,5 @@
 import os
+import random 
 
 def existeArchivo(destinacion):
     if os.path.exists(destinacion):
@@ -257,7 +258,7 @@ class Baraja():
         self.Cartas = []
 
     def Generar(self):
-        NumeroDeBarajas = 1#random.randint(1, 8)
+        NumeroDeBarajas = random.randint(1, 8)
         NumeroDeCartas = 13
         TipoDeCartas = 4
         
